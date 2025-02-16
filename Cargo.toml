@@ -34,7 +34,7 @@ indexmap = "2"
 numpy = "0.23"
 object_store = "0.11"
 parquet = "54"
-pyo3 = { version = "0.23", features = ["macros", "indexmap"] }
+pyo3 = { git = "https://github.com/noahshpak/pyo3.git", version = "0.23.3", features = ["anyhow", "uuid", "macros", "indexmap"], rev="f89b5f71ddb3f482256a7a2f4da5bc8b84db19a5"}
 # pyo3-arrow = "0.6"
 pyo3-arrow = { path = "./pyo3-arrow" }
 pyo3-async-runtimes = { version = "0.23", features = ["tokio-runtime"] }
